@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Hanken Grotesk";
+}
+
+.resultSummary {
+  width: 600px;
+  margin: auto;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  transform: translate(0%, 50%);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.result {
+  background-color: hsla(256, 72%, 46%, 1);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.yourResult {
+  text-align: center;
+  display: block;
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 30px;
+}
+
+.score-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(36, 5, 119, 0.418);
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.your-score {
+  color: hsl(0, 0%, 100%);
+  font-size: 64px;
+}
+
+.total-score {
+  color: hsla(222, 100%, 96%, 0.322);
+  font-size: 18px;
+}
+
+.great {
+  font-size: 24px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.score-compare {
+  color: hsla(241, 100%, 89%, 0.7);
+  text-align: center;
+}
+
+/* Summary Section */
+
+.section-summary {
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px;
+  border-radius: 9px;
+}
+
+span {
+  color: hsl(241, 100%, 89%);
+}
+
+.reaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: hsla(0, 100%, 67%, 0.05);
+  border-radius: 9px;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+.first-icon {
+  color: hsl(0, 100%, 67%);
+
+  display: flex;
+  gap: 10px;
+}
+
+.flash-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.thired-icon {
+  color: hsl(166, 100%, 37%);
+
+  display: flex;
+  gap: 10px;
+}
+
+.chat-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.fourth-icon {
+  color: hsl(234, 85%, 45%);
+
+  display: flex;
+  gap: 10px;
+}
+
+.eye-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.tNumber {
+  color: hsl(241, 100%, 89%);
+}
+
+.memory {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: hsla(39, 100%, 56%, 0.05);
+  border-radius: 9px;
+  margin-bottom: 12px;
+}
+
+.second-icon {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: hsla(166, 100%, 37%, 0.05);
+  border-radius: 9px;
+  margin-bottom: 12px;
+}
+
+.thired-icon {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: hsla(234, 85%, 45%, 0.05);
+  border-radius: 9px;
+  margin-bottom: 29px;
+}
+
+.fourth-icon {
+  color: hsl(234, 85%, 45%);
+}
+
+.btn {
+  padding: 12px 80px;
+  background-color: hsla(256, 72%, 46%, 1);
+  color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}

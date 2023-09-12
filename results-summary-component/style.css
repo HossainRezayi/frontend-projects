@@ -70,7 +70,7 @@ html {
 
 .section-summary {
   background-color: hsl(0, 0%, 100%);
-  padding: 40px;
+  padding: 30px;
   border-radius: 9px;
 }
 
@@ -78,13 +78,16 @@ span {
   color: hsl(241, 100%, 89%);
 }
 
-.reaction {
+.property {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  background-color: hsla(0, 100%, 67%, 0.05);
+  padding: 12px;
   border-radius: 9px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.05);
   margin-top: 20px;
 }
 
@@ -129,25 +132,17 @@ span {
 }
 
 .memory {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
   background-color: hsla(39, 100%, 56%, 0.05);
-  border-radius: 9px;
-  margin-bottom: 12px;
 }
 
 .second-icon {
   color: hsl(39, 100%, 56%);
+  display: flex;
+  gap: 10px;
 }
 
 .verbal {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
   background-color: hsla(166, 100%, 37%, 0.05);
-  border-radius: 9px;
-  margin-bottom: 12px;
 }
 
 .thired-icon {
@@ -155,12 +150,8 @@ span {
 }
 
 .visual {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
   background-color: hsla(234, 85%, 45%, 0.05);
-  border-radius: 9px;
-  margin-bottom: 29px;
+  margin-bottom: 25px;
 }
 
 .fourth-icon {
@@ -168,7 +159,7 @@ span {
 }
 
 .btn {
-  padding: 12px 80px;
+  padding: 15px 40%;
   background-color: hsla(256, 72%, 46%, 1);
   color: hsl(0, 0%, 100%);
   border-radius: 25px;
@@ -177,4 +168,5 @@ span {
 
 .btn:hover {
   cursor: pointer;
+  background-color: hsl(224, 30%, 27%);
 }

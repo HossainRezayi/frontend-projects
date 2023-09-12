@@ -1,0 +1,20 @@
+@media (max-width: 450px) {
+  .resultSummary {
+    width: 450px;
+    grid-template-columns: 1fr;
+    transform: translate(0%, 0%);
+  }
+
+  html {
+    font-size: 24px;
+  }
+
+  .btn {
+    padding: 15px 37%;
+    font-size: 24px;
+  }
+
+  .great {
+    font-size: 32px;
+  }
+}

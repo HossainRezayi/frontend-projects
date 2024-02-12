@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.clipboard {
+  max-width: 120rem;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  color: hsl(201, 11%, 66%);
+}
+
+.header {
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 6.4rem 0;
+}
+
+.text-box {
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.primary-heading {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1.6rem;
+  font-size: 3.2rem;
+}
+
+.secondry-heading {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1.6rem;
+  font-size: 2.4rem;
+}
+
+.tertairy-heading {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.text {
+  margin-bottom: 2.4rem;
+}
+
+.download-btns {
+  margin-bottom: 8rem;
+}
+
+.download-btn {
+  padding: 1rem 2.2rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  transition: all 0.3s;
+}
+
+.btn-ios {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.btn-ios:hover {
+  background-color: hsla(171, 66%, 44%, 0.9);
+}
+
+.btn-mac {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.btn-mac:hover {
+  background-color: hsla(233, 100%, 69%, 0.9);
+}
+
+.computer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 8rem;
+  margin: 3.2rem 12.8rem 8rem 0;
+}
+
+.computer-img {
+  width: 100%;
+}
+
+.computer-text-box {
+  align-self: center;
+}
+
+.computer-text {
+  margin-bottom: 3.2rem;
+  padding-right: 8rem;
+}
+
+.device-img-box {
+  width: 70rem;
+  margin: 8rem auto;
+}
+
+.device-img {
+  width: 100%;
+}
+
+.grid-3--cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 1.6rem;
+  margin: 3.2rem 0 12.8rem 0;
+
+  padding: 0 2.4rem 0 4.4rem;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-icon {
+  margin-bottom: 2.4rem;
+}
+
+.grid-text {
+  line-height: 1.5;
+  letter-spacing: 0.75px;
+}
+
+.brands {
+  padding: 0 2.4rem 0 4.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12.8rem;
+}
+
+.section-footer {
+  margin-top: 9.8rem;
+  padding: 4.4rem 0 4.4rem 6.4rem;
+  background-color: hsla(202, 11%, 66%, 0.116);
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2.4rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.footer-logo {
+  width: 4.4rem;
+}
+
+.social-logos {
+  display: flex;
+  gap: 1rem;
+
+  margin-left: 9.8rem;
+  align-self: center;
+}
+
+/* QUARY */
+
+@media (max-width: 24em) {
+  html {
+    font-size: 50%;
+    text-align: center;
+  }
+
+  .header {
+    padding: 4.4rem 0;
+  }
+
+  .hero-img {
+    width: 8rem;
+  }
+
+  .computer {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .computer-img {
+    margin-bottom: 2.4rem;
+  }
+
+  .computer-text {
+    padding-right: 0;
+  }
+
+  .text-box {
+    max-width: 100%;
+    margin: 0 2.4rem;
+  }
+
+  .download-btn {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .btn-ios {
+    margin-bottom: 1.6rem;
+  }
+
+  .device-img-box {
+    width: 90%;
+    margin: 8rem auto;
+  }
+
+  .grid-3--cols {
+    grid-template-columns: 1fr;
+    margin-bottom: 6.4rem;
+  }
+
+  .grid-item {
+    margin: 2.4rem;
+  }
+
+  .brands {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6.4rem;
+  }
+
+  .brand {
+    width: 9.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .section-footer {
+    padding: 4.4rem 0;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-logo,
+  .social-logos {
+    margin: 0 auto;
+  }
+}

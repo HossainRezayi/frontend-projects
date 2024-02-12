@@ -1,0 +1,349 @@
+/* GENERAL */
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2--cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-4--cols {
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.primary-heading {
+  font-size: 4rem;
+  margin-bottom: 2.4rem;
+}
+
+.main-heading {
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.fylo-img {
+  max-width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* HERO SECTION */
+
+.fylo {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 4.8rem 6.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.fylo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+.nav {
+  text-decoration: none;
+  color: #333;
+  margin-left: 3.2rem;
+}
+
+.section-hero {
+  margin-bottom: 12.8rem;
+}
+
+.hero-text-box {
+  margin-top: 8rem;
+  margin-right: 2.4rem;
+}
+
+.hero-text {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+}
+
+.mail {
+  padding: 0.9rem 8rem 0.9rem 1rem;
+  margin-right: 6px;
+}
+
+.hero-btn {
+  padding: 1.1rem 5.2rem;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: hsla(224, 93%, 58%, 0.95);
+  cursor: pointer;
+}
+
+/* SECTION FEATURE */
+
+.section-feature {
+  padding: 12.8rem 0;
+  background-image: url(images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.feature-text {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  line-height: 1.5;
+  margin-right: 9.8rem;
+}
+
+.link-arrow {
+  display: flex;
+  margin-right: 6px;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.main-link {
+  color: hsl(170, 45%, 43%);
+}
+
+.link-img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.quote {
+  width: 35rem;
+  padding: 2.4rem;
+  background-color: hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+}
+
+.quote-symbol {
+  width: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.quote-text {
+  margin-bottom: 1.2rem;
+}
+
+.quote-img-box {
+  display: flex;
+  align-items: center;
+}
+
+.quote-img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.quote-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.quote-founder {
+  font-size: 1.2rem;
+}
+
+/* SECTION TERM */
+.section-term {
+  background-color: hsl(238, 22%, 44%);
+  padding: 6.4rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+  gap: 9.8rem;
+}
+
+.email {
+  display: block;
+  padding: 1rem 12.8rem 1rem 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.term-btn {
+  padding: 1rem 2.4rem;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 2px;
+}
+
+.term-btn:hover {
+  background-color: hsla(224, 93%, 58%, 0.8);
+  cursor: pointer;
+}
+.secondry-heading {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.2rem;
+}
+
+.term-text {
+  color: hsl(0, 0%, 100%);
+}
+
+/* SECTION FOOTER */
+
+.section-footer {
+  background-color: hsl(243, 87%, 12%);
+  color: hsl(0, 0%, 100%);
+  padding: 4.8rem;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-list li {
+  margin-bottom: 1.2rem;
+}
+
+.phone-icon,
+.mail-icon {
+  margin-right: 1.2rem;
+}
+
+.social-logos {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-logo {
+  filter: invert() brightness(90);
+}
+
+.logo {
+  padding: 0.6rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 90rem;
+  margin-right: 8px;
+  color: #fff;
+}
+/* ************************ */
+/* QUARY */
+/* ************************ */
+@media (max-width: 24em) {
+  html {
+    font-size: 50%;
+  }
+
+  .fylo {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 3.2rem;
+  }
+
+  .section-hero,
+  .section-feature {
+    margin-bottom: 4.8rem;
+  }
+
+  .grid-2--cols,
+  .grid-4--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .fylo-img {
+    grid-row: 1;
+  }
+
+  .fylo-logo {
+    height: 3rem;
+  }
+
+  .fylo-nav {
+    display: flex;
+  }
+
+  .nav {
+    margin-right: 0.6rem;
+  }
+
+  .nav:last-child {
+    margin-right: 0;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+  }
+
+  .primary-heading {
+    font-size: 2.2rem;
+  }
+
+  .hero-text-box,
+  .primary-heading,
+  .section-term {
+    text-align: center;
+  }
+
+  .mail {
+    padding: 0.9rem 6.4rem 0.9rem 1rem;
+    margin-right: 0;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-btn {
+    padding: 0.9rem 9.8rem;
+  }
+
+  .main-link {
+    text-align: center;
+  }
+
+  .quote {
+    margin: 0 1.2rem;
+  }
+
+  .section-term {
+    padding: 2.4rem;
+
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .email {
+    padding: 0.8rem 8rem 0.8rem 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .term-btn {
+    padding: 0.8rem 8.8rem;
+    margin-bottom: 3.2rem;
+    font-size: 1.4rem;
+  }
+}

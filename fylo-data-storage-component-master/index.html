@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "Raleway";
+        font-size: 62.5%;
+        background-image: url(images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(229, 57%, 11%);
+      }
+
+      .fylo-storage {
+        width: 80rem;
+        margin: 15rem auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2.4rem;
+      }
+
+      .fylo {
+        background-color: hsl(228, 56%, 26%);
+        padding: 4rem;
+        border-radius: 9px;
+        border-top-right-radius: 50%;
+      }
+
+      .fylo-icon {
+        width: 9.6rem;
+        margin-bottom: 2rem;
+      }
+
+      .icons {
+        display: flex;
+        align-items: center;
+      }
+
+      .icon {
+        height: 3rem;
+        width: 3rem;
+        padding: 7px;
+        border-radius: 9px;
+        background-color: hsl(229, 57%, 11%);
+        margin-right: 0.8rem;
+      }
+
+      .storage {
+        align-self: end;
+        padding: 3.2rem;
+        font-size: 1.4rem;
+        color: hsl(243, 100%, 93%);
+        background-color: hsl(228, 56%, 26%);
+        border-radius: 9px;
+        position: relative;
+      }
+
+      .storage-text {
+        margin-bottom: 1.6rem;
+      }
+
+      .storage-icon {
+        height: 1.2rem;
+        background-color: hsl(229, 57%, 11%);
+        border-radius: 9px;
+        margin-bottom: 8px;
+        padding:1px;
+        padding-left: 4px;
+      }
+
+      .free-space{
+        display: inline-block;
+        padding:1.2rem;
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(229, 7%, 55%);
+        font-size:1.2rem;
+        border-radius: 9px;
+
+        position: absolute;
+        top:-25%;
+        right:10%;
+      }
+
+      .free-space strong{
+        font-size: 2.4rem;
+        color: hsl(229, 57%, 11%);
+        margin-right: 1rem;
+      }
+
+      .total-storage{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .storage-icon-inner{
+        width:81.5%;
+        height:7px;
+        background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+        border-radius: 9px;
+      }
+      
+      .white-circle{
+        height:0.9rem;
+        width:0.9rem;
+        border-radius: 50%;
+        background-color: hsl(243, 100%, 93%);
+        position: absolute;
+        right:22%;
+        transform: translate(50%, -80%);
+      }
+    
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+/* ********************** */
+/* QUARY */
+/* ********************** */
+@media(max-width:24em){
+  html{
+    font-size: 75%;
+  }
+  
+  .fylo-storage {
+    max-width:100%;
+    grid-template-columns: 1fr;
+    }
+
+   .free-space{
+    top:80%;
+    right:30%;
+  }  
+  
+  .white-circle{
+    right:27%;
+    transform: translate(50%, -80%);
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="fylo-storage">
+      <div class="fylo">
+        <img class="fylo-icon" src="images/logo.svg" />
+        <div class="icons">
+          <img class="icon" src="images/icon-document.svg" />
+          <img class="icon" src="images/icon-folder.svg" />
+          <img class="icon" src="images/icon-upload.svg" />
+        </div>
+      </div>
+      <div class="storage">
+        <p class="storage-text">You’ve used 815 GB of your storage</p>
+        <div class="storage-icon">
+          <div class="storage-icon-inner"></div>
+          <div class="white-circle"></div>
+        </div>
+        <p class="free-space"><strong>185</strong> GB Left</p>
+        <div class="total-storage">
+        <p>0 GB</p>
+        <p>1000 GB</p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

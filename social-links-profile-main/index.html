@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "Inter";
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 100%);
+      }
+
+      .social-profile {
+        width: 350px;
+        margin: 100px auto;
+        padding: 30px;
+        background-color: hsl(0, 0%, 12%);
+        text-align: center;
+        border-radius: 11px;
+      }
+
+      .social-img {
+        height: 72px;
+        width: 72px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      .social-name {
+        margin-bottom: 10px;
+      }
+
+      .social-country {
+        color: hsl(75, 94%, 57%);
+        margin-bottom: 20px;
+      }
+
+      .social-des {
+        margin-bottom: 15px;
+      }
+
+      .social-media {
+        list-style: none;
+        display: grid;
+        gap: 12px;
+      }
+
+      .social-medium {
+        width: 100%;
+        padding: 12px 0;
+        background-color: hsl(0, 0%, 20%);
+        border-radius: 9px;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="social-profile">
+      <img
+        class="social-img"
+        src="assets/images/avatar-jessica.jpeg"
+        alt="Screenshot of a girl"
+      />
+      <h2 class="social-name">Jessica Randall</h2>
+      <p class="social-country">London, United Kingdom</p>
+      <p class="social-des">"Front-end developer and avid reader."</p>
+      <ul class="social-media">
+        <li class="social-medium">GitHub</li>
+        <li class="social-medium">Frontend Mentor</li>
+        <li class="social-medium">LinkedIn</li>
+        <li class="social-medium">Twitter</li>
+        <li class="social-medium">Instagram</li>
+      </ul>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

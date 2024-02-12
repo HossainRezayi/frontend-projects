@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+      <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+        font-family: "Poppins";
+        background-image: url(images/bg-desktop.svg);
+        background-color: hsl(257, 40%, 49%);
+      }
+
+      .huddle-landing {
+        padding: 4.4rem 9.8rem;
+        position: relative;
+        font-size: 1.6rem;
+      }
+
+      .huddle-logo {
+        margin-bottom: 4.4rem;
+      }
+
+      .huddle {
+        display: flex;
+      }
+
+      .huddle-illustration {
+        width: 85%;
+        margin-right: 5.2rem;
+      }
+
+      .huddle-text-box {
+        margin-top: 5.2rem;
+        margin-right: 4.4rem;
+      }
+
+      .huddle-title {
+        font-size: 5.2rem;
+        margin-bottom: 4.4rem;
+        color: hsl(0, 0%, 100%);
+      }
+
+      .huddle-text {
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 3.2rem;
+      }
+
+      .btn {
+        padding: 1.2rem 4.4rem;
+        border-radius: 100px;
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(257, 40%, 49%);
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .btn:hover {
+        background-color: hsl(300, 69%, 71%);
+        color: hsl(0, 0%, 100%);
+      }
+
+      .logos {
+        position: absolute;
+        bottom: 0%;
+        right: 5%;
+      }
+
+      .logo {
+        height: 2.4rem;
+        width: 2.4rem;
+        fill: #fff;
+        padding: 0.8rem;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-right: 1.6rem;
+        cursor: pointer;
+      }
+
+      .logo:hover {
+        fill: hsl(300, 69%, 71%);
+        border: 1px solid hsl(300, 69%, 71%);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /* ********************** */
+      /* QUARY */
+      /* ********************** */
+      @media (max-width: 24em) {
+        .huddle-landing {
+          width: 100%;
+          padding: 4.4rem 3.2rem;
+        }
+
+        .huddle {
+          display: block;
+          text-align: center;
+        }
+
+        .huddle-illustration {
+          width: 30rem;
+        }
+
+        .huddle-text-box {
+          margin-right: 0;
+        }
+
+        .huddle-title {
+          font-size: 3.2rem;
+        }
+
+        .huddle-text {
+          font-size: 2rem;
+        }
+
+        .huddle-logo {
+          width: 12.8rem;
+        }
+
+        .btn {
+          margin-bottom: 9.6rem;
+        }
+
+        .logos {
+          bottom: 4%;
+          right: 22%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="huddle-landing">
+      <img class="huddle-logo" src="images/logo.svg" />
+      <div class="huddle">
+        <img
+          class="huddle-illustration"
+          src="images/illustration-mockups.svg"
+        />
+        <div class="huddle-text-box">
+          <h1 class="huddle-title">Build The Community Your Fans Will Love</h1>
+          <p class="huddle-text">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button class="btn">Register</button>
+        </div>
+      </div>
+      <div class="logos">
+        <ion-icon class="logo" name="logo-facebook"></ion-icon>
+        <ion-icon class="logo" name="logo-twitter"></ion-icon>
+        <ion-icon class="logo" name="logo-instagram"></ion-icon>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=League+Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "League Spartan";
+        font-size: 62.5%;
+        background-image: url(images/bg-pattern-top-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .social-proof {
+        max-width: 100rem;
+        margin: 100px auto;
+        font-size: 1.5rem;
+      }
+
+      .social-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7.2rem;
+      }
+
+      .info-text-box {
+        width: 35rem;
+      }
+
+      .info-title {
+        font-size: 4.8rem;
+        padding-right: 4rem;
+        color: hsl(300, 43%, 22%);
+        margin-bottom: 3.2rem;
+        line-height: 1;
+      }
+      .info-text {
+        color: hsl(300, 43%, 22%);
+      }
+
+      .rate-start {
+        margin-right: 12.8rem;
+        margin-top: 2.4rem;
+      }
+
+      .rate-center {
+        margin: 0 6.2rem;
+      }
+
+      .rate-end {
+        margin-left: 12.8rem;
+      }
+
+      .social-rate {
+        padding: 1.6rem 5.2rem 1.6rem 3.2rem;
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 0.9rem;
+        margin-bottom: 1.2rem;
+        color: hsl(300, 43%, 22%);
+
+        display: flex;
+      }
+
+      .icon {
+        margin-right: 3px;
+      }
+
+      .last {
+        margin-right: 1.5rem;
+      }
+
+      .social-feedbacks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.4rem;
+      }
+
+      .social-feedback {
+        background-color: hsl(300, 43%, 22%);
+        color: hsl(0, 0%, 100%);
+        padding: 3.6rem;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        border-radius: 9px;
+      }
+
+      .center {
+        margin-top: 2.2rem;
+      }
+
+      .end {
+        margin-top: 4.4rem;
+      }
+
+      .img-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.2rem;
+      }
+
+      .social-imgs {
+        height: 4.8rem;
+        width: 4.8rem;
+        border-radius: 50%;
+        margin-right: 1.6rem;
+      }
+
+      .verified {
+        color: hsl(333, 80%, 67%);
+      }
+
+      .social-rates {
+        display: block;
+        margin-bottom: -25rem;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /* ****************** */
+      /* QUARY */
+      /* ****************** */
+      @media (max-width: 24em) {
+        .social-proof {
+          margin: 4.4rem 2.4rem;
+        }
+        .social-info {
+          flex-direction: column;
+          margin-bottom: 30rem;
+          text-align: center;
+        }
+
+        .social-feedbacks {
+          grid-template-columns: 1fr;
+        }
+
+        .social-rate {
+          display: block;
+        }
+
+        .rate-start,
+        .rate-center,
+        .rate-end {
+          margin: 0 0 1.6rem 0;
+        }
+
+        .center,
+        .end {
+          margin-top: 0;
+        }
+
+        .info-title {
+          padding-right: 0;
+        }
+
+        .info-text {
+          margin-bottom: 2.4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="social-proof">
+      <div class="social-info">
+        <div class="info-text-box">
+          <h1 class="info-title">10,000+ of our users love our products.</h1>
+          <p class="info-text">
+            We only provide great products combined with excellent customer
+            service. See what our satisfied customers are saying about our
+            services.
+          </p>
+        </div>
+
+        <div class="social-rates">
+          <div class="social-rate rate-start">
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon last" src="images/icon-star.svg" />
+            <p class="rate-text">Rated 5 Stars in Reviews</p>
+          </div>
+          <div class="social-rate rate-center">
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon last" src="images/icon-star.svg" />
+            <p>Rated 5 Stars in Report Guru</p>
+          </div>
+          <div class="social-rate rate-end">
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon" src="images/icon-star.svg" />
+            <img class="icon last" src="images/icon-star.svg" />
+            <p>Rated 5 Stars in BestTech</p>
+          </div>
+        </div>
+      </div>
+      <div class="social-feedbacks">
+        <div class="social-feedback start">
+          <div class="img-box">
+            <img
+              class="social-imgs"
+              src="images/image-colton.jpg"
+              alt="Screenshot of a buyer"
+            />
+            <div>
+              <p class="name">Colton Smith</p>
+              <p class="verified">Verified Buyer</p>
+            </div>
+          </div>
+          <p class="feedback-text">
+            "We needed the same printed design as the one we had ordered a week
+            prior. Not only did they find the original order, but we also
+            received it in time. Excellent!"
+          </p>
+        </div>
+        <div class="social-feedback center">
+          <div class="img-box">
+            <img
+              class="social-imgs"
+              src="images/image-irene.jpg"
+              alt="Screenshot of a buyer"
+            />
+            <div>
+              <p class="name">Irene Roberts</p>
+              <p class="verified">Verified Buyer</p>
+            </div>
+          </div>
+          <p class="feedback-text">
+            "Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the
+            speed of delivery."
+          </p>
+        </div>
+        <div class="social-feedback end">
+          <div class="img-box">
+            <img
+              class="social-imgs"
+              src="images/image-anne.jpg"
+              alt="Screenshot of a buyer"
+            />
+            <div>
+              <p class="name">Anne Wallace</p>
+              <p class="verified">Verified Buyer</p>
+            </div>
+          </div>
+          <p class="feedback-text">
+            "Put an order with this company and can only praise them for the
+            very high standard. Will definitely use them again and recommend
+            them to everyone!"
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+
+      *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+      }
+
+      html{
+        font-family:"Outfit";
+        font-size:18px;
+        color:hsl(215, 51%, 70%);
+        background-color: hsl(217, 54%, 11%);
+      }
+
+      .nft-card{
+        width:350px;
+        margin: 150px auto;
+        border-radius:11px;
+        background-color: hsl(216, 50%, 16%);
+        padding:20px;
+      }
+
+      .nft-img{
+        width:100%;
+        border-radius: 11px;
+        margin-bottom: 20px;
+      }
+
+      .nft-title{
+        color:hsl(0, 0%, 100%);
+        margin-bottom: 15px;
+      }
+
+      .nft-text{
+       margin-bottom: 20px;
+      }
+
+      .inner,
+      .ETH,
+      .clock{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+      }
+
+      .icon{
+        margin-right:10px;
+      }
+
+      .ETH-text{
+        color:hsl(178, 100%, 50%);
+      }
+
+      hr{
+        margin:25px 0 20px 0;
+        height:1px;
+        border:none;
+        background-color:hsl(215, 32%, 27%);
+      }
+
+      .creator{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        
+      }
+
+      .creator-img{
+        height:36px;
+        width:36px;
+        border: 3px solid hsl(0, 0%, 100%);
+        border-radius: 50%;
+        margin-right:15px;
+      }
+
+      .creator-name strong{
+        color:hsl(0, 0%, 100%);
+      }
+
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nft-card">
+      <img
+        class="nft-img"
+        src="images/image-equilibrium.jpg"
+        alt="picture of a colorful diamond in blue space"
+      />
+
+      <h2 class="nft-title">Equilibrium #3429</h2>
+      <p class="nft-text">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="inner">
+        <div class="ETH">
+        <img class="icon" src="images/icon-ethereum.svg" alt="ETH Icon" />
+        <p class="ETH-text">0.041 ETH</p>
+      </div>
+        <div class="clock">
+          <img class="icon" src="images/icon-clock.svg" alt="clock icon" />
+          <p class="clock-text">3 days left</p>
+        </div>
+      </div>
+      <hr></hr>
+      <div class="creator">
+        <img class="creator-img" src="images/image-avatar.png" alt="Screenshot of a person" />
+        <p class="creator-name">Creation of <strong>Jules Wyvern</strong></p>
+      </div>
+    </div>
+
+    
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

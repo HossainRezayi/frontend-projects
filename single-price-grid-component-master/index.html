@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "Karla";
+        font-size: 62.5%;
+        background-color: hsl(218, 22%, 67%);
+      }
+
+      .single-price {
+        width: 80rem;
+        margin: 10rem auto;
+        font-size: 1.7rem;
+        border-radius: 1.1rem;
+        overflow: hidden;
+        color: hsl(218, 22%, 67%);
+      }
+
+      .info {
+        padding: 4.4rem;
+        background-color: hsl(204, 43%, 93%);
+      }
+
+      .info-title {
+        font-size: 3.2rem;
+        color: hsl(179, 62%, 43%);
+        margin-bottom: 3.2rem;
+      }
+
+      .info-subheading {
+        font-size: 2.4rem;
+        margin-bottom: 1.6rem;
+        color: hsl(71, 73%, 54%);
+      }
+
+      .info-text {
+        line-height: 1.5;
+      }
+
+      .components {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .sign-up {
+        padding: 4.4rem;
+        background-color: hsl(179, 62%, 43%);
+      }
+
+      .tertiary-heading {
+        color: hsl(204, 43%, 93%);
+        margin-bottom: 2.4rem;
+      }
+
+      .per-day {
+        color: hsla(203, 44%, 93%, 0.75);
+        margin-bottom: 2.4rem;
+      }
+
+      .price-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.6rem;
+      }
+
+      .price {
+        color: hsl(204, 43%, 93%);
+        font-size: 3.2rem;
+        margin-right: 1.2rem;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 1.6rem 0;
+        border-radius: 9px;
+        background-color: hsl(71, 73%, 54%);
+        color: hsl(204, 43%, 93%);
+        border: none;
+        font-size: 1.6rem;
+      }
+
+      .des {
+        padding: 4.4rem;
+        background-color: hsla(179, 62%, 43%, 0.75);
+      }
+
+      .des-text {
+        color: hsla(203, 44%, 93%, 0.5);
+        margin-right: 4.8rem;
+        line-height: 1.6;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /* ********************* */
+      /* QUARY */
+      /* ********************* */
+      @media (max-width: 24em) {
+        html {
+          font-size: 75%;
+        }
+
+        .single-price {
+          max-width: 100%;
+        }
+
+        .components {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="single-price">
+      <div class="info">
+        <h2 class="info-title">Join our community</h2>
+        <p class="info-subheading">30-day, hassle-free money back guarantee</p>
+        <p class="info-text">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
+      <div class="components">
+        <div class="sign-up">
+          <h3 class="tertiary-heading">Monthly Subscription</h3>
+          <div class="price-box">
+            <p class="price">&dollar;29</p>
+            <p class="per-month">per month</p>
+          </div>
+          <p class="per-day">Full access for less than &dollar;1 a day</p>
+          <button class="btn">Sign Up</button>
+        </div>
+        <div class="des">
+          <h3 class="tertiary-heading">Why Us</h3>
+          <p class="des-text">
+            Tutorials by industry experts Peer &amp; expert code review Coding
+            exercises Access to our GitHub repos Community forum Flashcard decks
+            New videos every week
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* GENERAL */
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        background-color: hsl(210, 46%, 95%);
+        font-family: "Barlow Semi Condensed";
+        font-weight: 500;
+        font-size: 62.5%;
+      }
+
+      .testimonials {
+        max-width: 120rem;
+        margin: 10rem auto;
+        font-size: 1.3rem;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.4rem;
+        align-items: start;
+      }
+
+      .testimonial {
+        padding: 3.2rem;
+        border-radius: 0.9rem;
+      }
+
+      .testimonail-name {
+        color: hsl(0, 0%, 81%);
+        font-size: 1.4rem;
+        margin-bottom: 3px;
+      }
+
+      .testimonial-verified {
+        color: hsla(0, 0%, 81%, 0.5);
+      }
+
+      .testimonial-comment {
+        font-size: 2rem;
+        color: hsl(0, 0%, 100%);
+        line-height: 1.2;
+        margin-bottom: 2rem;
+      }
+
+      .testimonial-text {
+        font-size: 1.4rem;
+        color: hsla(0, 0%, 100%, 0.7);
+        line-height: 1.5;
+      }
+
+      .testimonial-name-box {
+        display: flex;
+        margin-bottom: 2rem;
+      }
+
+      .testimonial-img {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        margin-right: 1.6rem;
+      }
+
+      /* DANIEL */
+
+      .testimonial-daniel {
+        background-color: hsl(263, 55%, 52%);
+        grid-column: span 2;
+      }
+
+      /* Jonathan */
+
+      .testimonial-jonathan {
+        background-color: hsl(217, 19%, 35%);
+      }
+
+      /* Kira */
+
+      .testimonial-kira {
+        background-color: hsl(0, 0%, 100%);
+        grid-row: span 2;
+      }
+
+      .name {
+        color: hsl(217, 19%, 35%);
+      }
+
+      .verified {
+        color: hsla(217, 19%, 35%, 0.5);
+      }
+
+      .comment {
+        color: hsl(217, 19%, 35%);
+      }
+
+      .text {
+        color: hsla(217, 19%, 35%, 0.7);
+      }
+
+      /* JEANETTE */
+
+      .testimonial-jeanette {
+        background-color: hsl(0, 0%, 100%);
+      }
+
+      /* PATRICK */
+
+      .testimonial-patrick {
+        background-color: hsl(219, 29%, 14%);
+        grid-column: span 2;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /* ******************************** */
+      /* QUARY */
+      /* ******************************** */
+      @media (max-width: 24em) {
+        .testimonials {
+          grid-template-columns: 1fr;
+        }
+
+        .testimonial-daniel {
+          grid-column: span 1;
+          grid-row: span 2;
+        }
+
+        .testimonial-patrick {
+          grid-column: span 1;
+          grid-row: span 2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testimonials">
+      <div class="testimonial-daniel testimonial">
+        <div class="testimonial-name-box">
+          <img
+            class="testimonial-img"
+            src="images/image-daniel.jpg"
+            alt="Screenshot of a student"
+          />
+          <div>
+            <p class="testimonail-name">Daniel Clifford</p>
+            <p class="testimonial-verified">Verified Graduate</p>
+          </div>
+        </div>
+        <p class="testimonial-comment">
+          I received a job offer mid-course, and the subjects I learned were
+          current, if not more so, in the company I joined. I honestly feel I
+          got every penny’s worth.
+        </p>
+        <p class="testimonial-text">
+          “ I was an EMT for many years before I joined the bootcamp. I’ve been
+          looking to make a transition and have heard some people who had an
+          amazing experience here. I signed up for the free intro course and
+          found it incredibly fun! I enrolled shortly thereafter. The next 12
+          weeks was the best - and most grueling - time of my life. Since
+          completing the course, I’ve successfully switched careers, working as
+          a Software Engineer at a VR startup. ”
+        </p>
+      </div>
+      <div class="testimonial-jonathan testimonial">
+        <div class="testimonial-name-box">
+          <img
+            class="testimonial-img"
+            src="images/image-jonathan.jpg"
+            alt="Screenshot of a student"
+          />
+          <div>
+            <p class="testimonail-name">Johathan Walters</p>
+            <p class="testimonial-verified">Verified Graduate</p>
+          </div>
+        </div>
+        <p class="testimonial-comment">
+          The team was very supportive and kept me motivated
+        </p>
+        <p class="testimonial-text">
+          “ I started as a total newbie with virtually no coding skills. I now
+          work as a mobile engineer for a big company. This was one of the best
+          investments I’ve made in myself. ”
+        </p>
+      </div>
+      <div class="testimonial-kira testimonial">
+        <div class="testimonial-name-box">
+          <img
+            class="testimonial-img"
+            src="images/image-kira.jpg"
+            alt="Screenshot of a student"
+          />
+          <div>
+            <p class="testimonail-name name">Kira Whittle</p>
+            <p class="testimonial-verified verified">Verified Graduate</p>
+          </div>
+        </div>
+        <p class="testimonial-comment comment">
+          Such a life-changing experience. Highly recommended!
+        </p>
+        <p class="testimonial-text text">
+          “ Before joining the bootcamp, I’ve never written a line of code. I
+          needed some structure from professionals who can help me learn
+          programming step by step. I was encouraged to enroll by a former
+          student of theirs who can only say wonderful things about the program.
+          The entire curriculum and staff did not disappoint. They were very
+          hands-on and I never had to wait long for assistance. The agile team
+          project, in particular, was outstanding. It took my learning to the
+          next level in a way that no tutorial could ever have. In fact, I’ve
+          often referred to it during interviews as an example of my developent
+          experience. It certainly helped me land a job as a full-stack
+          developer after receiving multiple offers. 100% recommend! ”
+        </p>
+      </div>
+      <div class="testimonial-jeanette testimonial">
+        <div class="testimonial-name-box">
+          <img
+            class="testimonial-img"
+            src="images/image-jeanette.jpg"
+            alt="Screenshot of a student"
+          />
+          <div>
+            <p class="testimonail-name name">Jeanette Harmon</p>
+            <p class="testimonial-verified verified">Verified Graduate</p>
+          </div>
+        </div>
+        <p class="testimonial-comment comment">
+          An overall wonderful and rewarding experience
+        </p>
+        <p class="testimonial-text text">
+          “ Thank you for the wonderful experience! I now have a job I really
+          enjoy, and make a good living while doing something I love. ”
+        </p>
+      </div>
+      <div class="testimonial-patrick testimonial">
+        <div class="testimonial-name-box">
+          <img
+            class="testimonial-img"
+            src="images/image-patrick.jpg"
+            alt="Screenshot of a student"
+          />
+          <div>
+            <p class="testimonail-name">Patrick Abrams</p>
+            <p class="testimonial-verified">Verified Graduate</p>
+          </div>
+        </div>
+        <p class="testimonial-comment">
+          Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was
+          easy.
+        </p>
+        <p class="testimonial-text">
+          “ The staff seem genuinely concerned about my progress which I find
+          really refreshing. The program gave me the confidence necessary to be
+          able to go out in the world and present myself as a capable junior
+          developer. The standard is above the rest. You will get the personal
+          attention you need from an incredible community of smart and amazing
+          people. ”
+        </p>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>

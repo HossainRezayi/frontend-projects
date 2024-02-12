@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+        font-family: "Lexend Deca";
+        background-color: hsl(0, 0%, 95%);
+      }
+
+      .car {
+        max-width: 100rem;
+        font-size: 1.5rem;
+        color: hsla(0, 0%, 100%, 0.75);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10rem auto;
+      }
+
+      .padding-between {
+        padding: 5.2rem;
+      }
+
+      .sedans {
+        background-color: hsl(31, 77%, 52%);
+      }
+
+      .suvs {
+        background-color: hsl(184, 100%, 22%);
+      }
+
+      .luxury {
+        background-color: hsl(179, 100%, 13%);
+      }
+
+      .car-icon {
+        margin-bottom: 4.4rem;
+      }
+
+      .car-title {
+        font-size: 4.4rem;
+        margin-bottom: 4.4rem;
+        font-family: "Big Shoulders Display";
+        text-transform: uppercase;
+        color: hsl(0, 0%, 95%);
+      }
+
+      .car-text {
+        margin-bottom: 8rem;
+        line-height: 1.6;
+        font-size: 1.5rem;
+      }
+
+      .btn {
+        padding: 1.6rem 3.6rem;
+        border-radius: 100px;
+        border: none;
+        font-size: 1.6rem;
+        background-color: hsl(0, 0%, 95%);
+        cursor: pointer;
+      }
+
+      .sedans-btn {
+        color: hsl(31, 77%, 52%);
+      }
+
+      .sedans-btn:hover {
+        box-shadow: inset 0 0 0 2px hsl(0, 0%, 95%);
+        color: hsl(0, 0%, 95%);
+        background-color: hsl(31, 77%, 52%);
+      }
+
+      .suvs-btn {
+        color: hsl(184, 100%, 22%);
+      }
+
+      .suvs-btn:hover {
+        box-shadow: inset 0 0 0 2px hsl(0, 0%, 95%);
+        color: hsl(0, 0%, 95%);
+        background-color: hsl(184, 100%, 22%);
+      }
+
+      .luxury-btn {
+        color: hsl(179, 100%, 13%);
+      }
+
+      .luxury-btn:hover {
+        box-shadow: inset 0 0 0 2px hsl(0, 0%, 95%);
+        color: hsl(0, 0%, 95%);
+        background-color: hsl(179, 100%, 13%);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /* QUARIES */
+
+      @media (max-width: 24em) {
+        html {
+          font-size: 50%;
+        }
+
+        .car {
+          grid-template-columns: 1fr;
+        }
+        .btn {
+          padding: 0.8rem 1.6rem;
+        }
+
+        .padding-between {
+          padding: 3.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="car">
+      <div class="sedans padding-between">
+        <img class="car-icon" src="images/icon-sedans.svg" alt="Sedans icon" />
+        <h1 class="car-title">Sedans</h1>
+        <p class="car-text">
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <button class="sedans-btn btn">Learn More</button>
+      </div>
+      <div class="suvs padding-between">
+        <img class="car-icon" src="images/icon-suvs.svg" alt="Suvs icon" />
+        <h1 class="car-title">SUVs</h1>
+        <p class="car-text">
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </p>
+        <button class="suvs-btn btn">Learn More</button>
+      </div>
+      <div class="luxury padding-between">
+        <img class="car-icon" src="images/icon-luxury.svg" alt="Luxury icon" />
+        <h1 class="car-title">Luxury</h1>
+        <p class="car-text">
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <button class="luxury-btn btn">Learn More</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Hossain Rezayi</a>.
+    </div>
+  </body>
+</html>

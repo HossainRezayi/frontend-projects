@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "Hanken Grotesk", sans-serif;
+        background-color: hsl(221, 100%, 96%);
+        color: hsl(241, 100%, 89%);
+        font-size: 62.5%;
+      }
+
+      .component {
+        width: 60rem;
+        margin: 10rem auto;
+        font-size: 1.6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 1.5rem;
+      }
+
+      .result {
+        background-color: hsl(241, 81%, 54%);
+        border-radius: 1.5rem;
+        overflow: hidden;
+        padding: 4rem;
+        text-align: center;
+      }
+
+      .result-title {
+        margin-bottom: 4.4rem;
+      }
+
+      .score {
+        width: 15.2rem;
+        height: 15.2rem;
+        background-color: hsla(256, 72%, 46%, 1);
+        border-radius: 50%;
+        transform: translate(25%, -10%);
+        padding: 3.2rem;
+      }
+
+      .your-score {
+        font-size: 5.2rem;
+        color: hsl(0, 0%, 100%);
+      }
+
+      .comment {
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+
+      .summary {
+        background-color: hsl(0, 0%, 100%);
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        padding: 3rem;
+      }
+
+      .summary-title {
+        color: hsl(224, 30%, 27%);
+        margin-bottom: 2rem;
+      }
+
+      .box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1.2rem 1.2rem;
+        border-radius: 9px;
+      }
+
+      .box img {
+        margin-right: 1rem;
+      }
+
+      .box div {
+        display: flex;
+      }
+
+      .reaction-box {
+        background-color: hsla(0, 100%, 67%, 0.1);
+        color: hsl(0, 100%, 67%);
+        margin-bottom: 1rem;
+      }
+
+      .Memory-box {
+        background-color: hsl(39, 100%, 56%, 0.1);
+        color: hsl(39, 100%, 56%);
+        margin-bottom: 1rem;
+      }
+
+      .Verbal-box {
+        background-color: hsl(166, 100%, 37%, 0.1);
+        color: hsl(166, 100%, 37%);
+        margin-bottom: 1rem;
+      }
+
+      .Visual-box {
+        background-color: hsl(234, 85%, 45%, 0.1);
+        color: hsl(234, 85%, 45%);
+        margin-bottom: 3rem;
+      }
+
+      .number {
+        color: hsl(241, 100%, 89%);
+      }
+
+      .number strong {
+        color: hsl(224, 30%, 27%);
+      }
+
+      .btn {
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(224, 30%, 27%);
+        width: 100%;
+        padding: 1.2rem;
+        border-radius: 3rem;
+        font-weight: 700;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /*  QUARY */
+
+      @media (max-width: 24em) {
+        html {
+          font-size: 75%;
+        }
+
+        .component {
+          max-width: 100%;
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="component">
+      <div class="result">
+        <h3 class="result-title">Your Result</h3>
+        <div class="score">
+          <p class="your-score">76</p>
+          <p class="total-score">of 100</p>
+        </div>
+        <p class="comment">Great</p>
+        <p class="des">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="summary">
+        <h2 class="summary-title">Summary</h2>
+        <div class="reaction-box box">
+          <div>
+            <img src="assets/images/icon-reaction.svg" />
+            <p>Reaction</p>
+          </div>
+          <p class="number"><strong>80 </strong> / 100</p>
+        </div>
+        <div class="Memory-box box">
+          <div>
+            <img src="assets/images/icon-memory.svg" />
+            <p>Memory</p>
+          </div>
+          <p class="number"><strong>92 </strong> / 100</p>
+        </div>
+        <div class="Verbal-box box">
+          <div>
+            <img src="assets/images/icon-verbal.svg" />
+            <p>Verbal</p>
+          </div>
+          <p class="number"><strong>61 </strong> / 100</p>
+        </div>
+        <div class="Visual-box box">
+          <div>
+            <img src="assets/images/icon-visual.svg" />
+            <p>Visual</p>
+          </div>
+          <p class="number"><strong>72 </strong> / 100</p>
+        </div>
+        <button class="btn">Continue</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

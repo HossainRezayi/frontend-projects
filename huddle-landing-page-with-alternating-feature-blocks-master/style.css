@@ -1,0 +1,281 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.huddle-landing {
+  max-width: 130rem;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  color: hsl(192, 100%, 9%);
+}
+
+.section-hero {
+  background-image: url(images/bg-hero-desktop.svg);
+  background-color: hsl(193, 100%, 96%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4.4rem;
+}
+
+.section-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  column-gap: 4.4rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.4rem;
+}
+
+.btn {
+  padding: 1rem 4.4rem;
+  border-radius: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 1rem 4px hsla(0, 0%, 0%, 0.11);
+}
+
+.hero-text-box {
+  align-self: center;
+}
+
+.primary-heading {
+  font-size: 4.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.hero-des {
+  margin-bottom: 1.6rem;
+}
+
+.start-btn {
+  padding: 1.4rem 4.4rem;
+  border-radius: 2rem;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+
+.img {
+  width: 100%;
+}
+
+.section-testimonials {
+  padding: 9.8rem 4.4rem 12.8rem 4.4rem;
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 9.8rem;
+  padding: 3.2rem 1.6rem 3.2rem 9.8rem;
+  box-shadow: 0 0 1rem 4px hsla(0, 0%, 0%, 0.11);
+  margin-bottom: 2.4rem;
+  border-radius: 9px;
+}
+
+.left {
+  grid-template-columns: 1fr 1fr;
+}
+
+.testimonial-text-box {
+  align-self: center;
+}
+
+.secondry-heading {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.bulid-community {
+  max-width: 70rem;
+  padding: 5.2rem 8rem;
+  border-radius: 9px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 1rem 4px hsla(0, 0%, 0%, 0.116);
+
+  position: absolute;
+  top: -40%;
+  left: 25%;
+}
+
+.community-heading {
+  color: hsl(192, 100%, 9%);
+  margin-bottom: 1.6rem;
+  font-size: 3.2rem;
+}
+
+.community-btn {
+  padding: 1.4rem 4.4rem;
+  border-radius: 2rem;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+
+.section-footer {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(0, 0%, 100%);
+  padding: 9.8rem 4.4rem 6.4rem 8rem;
+  position: relative;
+  margin-top: 12.8rem;
+}
+
+.grid-4--cols {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  column-gap: 4.4rem;
+  font-size: 1.4rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 1.2rem;
+}
+
+.contact-icons {
+  width: 1.4rem;
+  margin-right: 1rem;
+}
+
+.location span {
+  margin-left: 1rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+}
+
+.footer-logo {
+  filter: invert() brightness(200%) grayscale() contrast(200%);
+  margin-bottom: 2.4rem;
+}
+
+.logo {
+  padding: 0.6rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 0.6rem;
+}
+
+.logo:hover {
+  border: 1px solid hsl(322, 100%, 66%);
+  color: hsl(322, 100%, 66%);
+  cursor: pointer;
+}
+
+/* QUARY */
+
+@media (max-width: 24em) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-hero,
+  .section-testimonials {
+    text-align: center;
+  }
+
+  .section-hero-inner,
+  .testimonial,
+  .grid-4--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-4--cols {
+    gap: 2.4rem;
+  }
+
+  .section-testimonials {
+    padding: 9.8rem 4.4rem 6.4rem 4.4rem;
+  }
+
+  .testimonial {
+    padding: 4.4rem;
+  }
+
+  .testimonial-img {
+    grid-row: 1;
+    margin-bottom: 4.4rem;
+  }
+
+  .header-logo {
+    height: 2rem;
+  }
+
+  .btn {
+    padding: 0.6rem 2rem;
+  }
+
+  .header {
+    padding: -6.4rem;
+    align-items: center;
+  }
+
+  .primary-heading {
+    font-size: 3.2rem;
+  }
+
+  .start-btn {
+    margin: 1.6rem 0 3.2rem 0;
+  }
+
+  .social-logos {
+    text-align: center;
+  }
+
+  .copyright {
+    right: 25%;
+    bottom: 5%;
+  }
+
+  .bulid-community {
+    width: 40rem;
+    padding: 3.2rem 2.4rem;
+
+    top: -15%;
+    left: 8%;
+  }
+
+  .community-heading {
+    margin-bottom: 1.6rem;
+    font-size: 2rem;
+  }
+
+  .community-btn {
+    padding: 1rem 3.2rem;
+  }
+
+  .footer-logo {
+    height: 2.4rem;
+  }
+}
